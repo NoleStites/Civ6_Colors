@@ -1,10 +1,10 @@
 # Civ6_Colors
 ## Description
-This repo contains a Python script that allows users to edit the main colors of leaders in the video game Sid Meier's Civilization VI. The mod currently supports base-game leaders and DLC content.
+This repo contains an executable that allows users to edit the main colors of leaders in the video game Sid Meier's Civilization VI. The mod currently supports base-game leaders and DLC content.
 
 > It is important to note that this code edits the Civilization VI source code directly, namely the following files: `playerstandardcolors.xml` and `playercolors.xml`. **This program lets you safely undo any changes to regain the original source code**.
 
-<!-- ![An example leader with colors changed](example_colors.png) -->
+![An example leader with colors changed](/assets/preview.png)
 
 ## Setup
 ### Windows
@@ -13,12 +13,6 @@ This repo contains a Python script that allows users to edit the main colors of 
     > Your system will likely flag the file as untrustworthy. Click "Keep" and it will be downloaded.
 2. Open the downloaded file with double-click and enjoy!
     > **IMPORTANT**: understand that this file, when run, will access and modify your Civilization VI source code. It is perfectly safe and can be undone through clicking "Reset Files" in the app.
-
-### MacOS
-Coming soon.
-
-### Linux
-Coming soon.
 
 ## Functionality
 | Button/Section Name | Description |
@@ -30,9 +24,22 @@ Coming soon.
 | "Subimt!" | Assigns the current primary and secondary color selection to the selected leader. |
 
 ## Viewing the New Colors
-- If you haven't started the Civilization VI application yet, do so, enter a game, and enjoy!
-- If you started the game but are in the main menu, enter a game and enjoy!
-- If you are actively in a game, go back to the main menu and reload your game to enjoy!
+Before anything, start/restart the Civilization VI application (if in game, close and restart)
+
+### Singleplayer
+1. In the "Create Game" menu, select the leader for which you changed the color (ex: Gandhi)
+2. Enter the "Advanced Setup" options       
+![Advanced Setup location](/assets/single_step2.png "Where to find the Advanced Setup options")
+3. Select the icon to the left of the leader portrait and choose the 4th/final color option, which should match your custom colors (ex: hot pink and yellow)      
+![Custom color location](/assets/single_step3.png "Singleplayer: How to select your custom colors")
+
+### Multiplayer
+1. In the "Staging Room", select the leader for which you changed the color (ex: Gandhi)
+2. Select the icon to the left of the leader portrait and choose the 4th/final color option, which should match your custom colors (ex: hot pink and yellow)      
+![Custom color location](/assets/multi_step2.png "Multiplayer: How to select your custom colors")
+
+> **NOTE 1**: when you change the color of any leader using the mod, you must restart the game to see the changes.     
+> **NOTE 2**: new changes will automatically apply to already-existing games, assuming the 4th/final color option for the leader was selected at game-creation.
 
 ## Disclaimer
 This project is an unofficial modding utility for Civilization VI that allows users to customize in-game colors by modifying configuration files **they already own**. This tool does **not** distribute or contain any copyrighted game assets, nor does it bypass any form of DRM or protected code.
